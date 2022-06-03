@@ -4,6 +4,7 @@
     --color-white: #F1F2F4;
     --color-gray: #A3ABB2;
     --color-black: #3D3D3D;
+    --color-white: #fff;
     --bg-color-black: #0C151D;
     --bg-color-yellow: #FFE071;
     --bg-color-darkgray: #171F26;
@@ -22,6 +23,10 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -57,7 +62,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
 }
 
 .profile-content h1 {
@@ -122,9 +127,13 @@ header {
     font-weight: 500;
     border-radius: 10px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.down-button img {
+.down-button img, .down-button p {
     background-color: var(--bg-color-yellow);
 }
 
@@ -174,22 +183,26 @@ button:hover {
 
 .port-dark-button {
     background-color: var(--bg-color-black);
-    margin-right: 4px;    
+    margin-right: 4px;
+    transition: .5s;    
 }
 
 .skill-dark-button {
     background-color: var(--bg-color-black);
-    margin-left: 4px;    
+    margin-left: 4px;
+    transition: .5s;     
 }
 
 .port-gray-button {
     background-color: var(--bg-color-darkgray);
     margin-right: 4px;;
+    transition: .5s; 
 }
 
 .skill-gray-button {
     background-color: var(--bg-color-darkgray);
     margin-left: 4px;
+    transition: .5s; 
 }
 
 .portfolio-content-show {
@@ -218,7 +231,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 650px;
     margin: 15px 15px;
 }
 
@@ -253,4 +265,220 @@ button:hover {
     color: var(--color-gray);
     font-weight: 400;
     margin: 40px 10px;
+}
+
+@media (min-width: 960px) {
+    #profile-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .image-profile {
+        width: 180px;
+        height: 180px;
+        margin: 20px 0px;
+        margin-right: 40px;
+    }
+
+    .image-profile img {
+        padding: 10px;
+    }
+
+    .profile-content h1 {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    
+    .profile-content h3 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    
+    .social-media {
+        min-width: 180px;
+        margin: 20px 0;
+    }
+    
+    .social-media img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .about-content {
+        margin: 20px 0;
+    }
+
+    .about-content h1 {
+        font-size: 32px;
+        margin: 40px 0px;
+    }
+    
+    .about-content p {
+        font-size: 20px;
+    }
+
+    .button-container button{
+        width: 225px;
+        height: 60px;
+    }
+    
+    .down-button p {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    .down-button img {
+        width: 16px;
+    }
+    
+    .contact-button {
+        font-size: 18px;
+    }
+
+    .button-switch {
+        width: 525px;
+        height: 80px;
+        padding: 10px;
+        margin: 15px 0 30px 0;
+    }
+    
+    .button-switch button {
+        font-size: 18px;
+    }
+
+    .portfolio-content-show {
+        margin: 20px 0px;
+    }
+    
+    .portfolio-content-show img{
+        width: 340px;
+    }
+
+    .border-img {
+        width: 85px;
+        height: 85px;
+        margin: 20px 15px;
+    }
+    
+    .skill-content-show {
+        margin: 20px 0px;
+    }
+
+    .footer-content p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #profile-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .image-profile {
+        width: 200px;
+        height: 200px;
+        margin: 20px 0px;
+        margin-right: 40px;
+    }
+
+    .image-profile img {
+        padding: 12px;
+        background-color: var(--color-white);
+    }
+
+    .profile-content h1 {
+        margin-top: 20px;
+        font-size: 46px;
+    }
+    
+    .profile-content h3 {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    
+    .social-media {
+        min-width: 200px;
+        margin: 20px 0;
+    }
+    
+    .social-media img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-content {
+        margin: 20px 0;
+    }
+
+    .about-content h1 {
+        font-size: 36px;
+        margin: 40px 0px;
+    }
+    
+    .about-content p {
+        font-size: 24px;
+        max-width: 800px;
+        margin: 0px 15px;
+    }
+
+    .button-container button{
+        width: 290px;
+        height: 80px;
+        margin: 60px 20px;
+    }
+    
+    .down-button p {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+    
+    .down-button img {
+        width: 20px;
+    }
+    
+    .contact-button {
+        font-size: 22px;
+    }
+
+    .button-switch {
+        width: 755px;
+        height: 115px;
+        padding: 18px;
+        margin: 20px 0 40px 0;
+    }
+    
+    .button-switch button {
+        font-size: 22px;
+    }
+
+    .portfolio-content-show {
+        margin: 25px 0px;
+    }
+    
+    .portfolio-content-show img{
+        width: 360px;
+        margin: 20px 15px;
+    }
+
+    .border-img {
+        width: 100px;
+        height: 100px;
+        margin: 25px 15px;
+    }
+    
+    .skill-content-show {
+        margin: 25px 0px;
+        max-width: 700px;
+    }
+    
+    .footer-content p {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
 }
