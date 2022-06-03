@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --color-white: #F1F2F4;
+    --color-gray: #A3ABB2;
+    --color-black: #3D3D3D;
+    --bg-color-black: #0C151D;
+    --bg-color-yellow: #FFE071;
+    --bg-color-darkgray: #171F26;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-black);
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-profile {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--bg-color-yellow);
+    margin: 20px 0px;
+}
+
+.image-profile img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 8px;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.profile-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.profile-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 150px;
+    margin: 20px 0;
+}
+
+.social-media img{
+    width: 20px;
+    height: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content h1 {
+    font-size: 20px;
+    color: var(--color-white);
+    margin: 20px 0px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: var(--color-gray);
+    text-align: justify;
+    min-width: 280px;
+    max-width: 600px;
+    margin: 10px 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button{
+    width: 160px;
+    height: 45px;
+    margin: 50px 10px;
+}
+
+.down-button {
+    background-color: var(--bg-color-yellow);
+    color: var(--color-black);
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+}
+
+.down-button img {
+    background-color: var(--bg-color-yellow);
+}
+
+.contact-button {
+    background-color: var(--bg-color-darkgray);
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--color-gray);
+    border: none;
+}
+
+button:active {
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#portfolio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-switch {
+    width: 330px;
+    height: 65px;
+    background-color: var(--bg-color-darkgray);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    margin: 10px 0;
+}
+
+.button-switch button {
+    height: 100%;
+    width: 50%;
+    color: var(--color-gray);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.port-dark-button {
+    background-color: var(--bg-color-black);
+    margin-right: 4px;    
+}
+
+.skill-dark-button {
+    background-color: var(--bg-color-black);
+    margin-left: 4px;    
+}
+
+.port-gray-button {
+    background-color: var(--bg-color-darkgray);
+    margin-right: 4px;;
+}
+
+.skill-gray-button {
+    background-color: var(--bg-color-darkgray);
+    margin-left: 4px;
+}
+
+.portfolio-content-show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.portfolio-content-show img{
+    width: 300px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.portfolio-content-hide {
+    display: none;
+}
+
+.border-img {
+    background-color: var(--bg-color-darkgray);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 650px;
+    margin: 15px 15px;
+}
+
+.skill-content-show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    max-width: 650px;
+}
+
+.skill-content-show img {
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.skill-content-hide {
+    display: none;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p {
+    color: var(--color-gray);
+    font-weight: 400;
+    margin: 40px 10px;
+}
